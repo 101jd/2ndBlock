@@ -288,6 +288,19 @@ No user sessions are running outdated binaries.
 
 No VM guests are running outdated hypervisor (qemu) binaries on this host.
 ```
+<u>__Использованы команды:__</u>
+
+* __apt install mariadb-server mariadb-client__
+
+  Установка пакетов с помощью утилиты _/usr/bin/apt_
+
+*  __apt update__
+
+  Обновление информации о пакетах, находящихся в списках репозиториев _/etc/apt/sources.list_ и _/etc/apt/sources.list.d/_
+
+* __apt --fix-broken install__
+
+  Исправление недостающих зависимостей
 
 ## Установка MaxScale со стороннего репозитория
 
@@ -303,6 +316,24 @@ root@jd-vm:~# curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | bas
 # [info] Done adding trusted package signing keys
 root@jd-vm:~# 
 ```
+<u>__Использованы команды:__</u>
+
+* __curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup__
+
+  Утилита _/usr/bin/curl_ позволяет загружать файлы по ссылкам из Интернета. 
+
+  <u>Флаги:</u>
+
+      -S --show-error			 Show error even when -s is used
+
+      -s, --silent             Silent mode
+
+      -L, --location           Follow redirects
+
+* __| bash -s -- --mariadb-maxscale-version="24.02" --os-type=ubuntu --os-version=jammy__
+  * __bash -s__ -- запускается _/usr/bin/bash_ с флагом _-s_, который означает, что последующий текст будет передан в позиционные переменные, а не как опции.
+
+  * Также здесь используется __пайплайн__ (конвейер) __'|'__, позволяющий передавать результат работы одной команды в качестве входных данных для следующей.
 
 ## Проверка статуса сервиса
 
@@ -337,6 +368,8 @@ Sep 17 13:03:19 jd-vm /etc/mysql/debian-start[33991]: This installation of Maria
 Sep 17 13:03:19 jd-vm /etc/mysql/debian-start[33991]: There is no need to run mysql_upgrade again >
 Sep 17 13:03:19 jd-vm /etc/mysql/debian-start[33991]: You can use --force if you still want to run>
 ```
+
+__systemctl__ -- утилита для управления процессами, службами и демонами в системе Linux.
 
 ## Проверка работы БД
 
