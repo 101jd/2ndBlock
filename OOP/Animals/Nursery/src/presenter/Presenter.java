@@ -1,9 +1,7 @@
 package presenter;
 
 import model.Service;
-import model.animals.builder.AnimalBuilder;
-import model.animals.builder.CatBuilder;
-import model.animals.builder.DogBuilder;
+import model.animals.builder.*;
 import model.animals.enums.AnimalType;
 import model.animals.enums.PackAnimals;
 import model.animals.enums.Pets;
@@ -65,7 +63,11 @@ public class Presenter {
     public void fillBuilders(){
         model.fillBuilders(new AnimalBuilder[]{
                 new CatBuilder(),
-                new DogBuilder()
+                new DogBuilder(),
+                new HumsterBuilder(),
+                new HorseBuilder(),
+                new DonkeyBuilder(),
+                new HorseBuilder()
         });
     }
 
