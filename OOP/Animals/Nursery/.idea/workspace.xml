@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46cf70f1-3312-42e1-88e9-bc4059e8d8db" name="Changes" comment="" />
+    <list default="true" id="46cf70f1-3312-42e1-88e9-bc4059e8d8db" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/animals/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/animals/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/animals/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/animals/builder/AnimalBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/animals/builder/CatBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/animals/builder/DogBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/animals/enums/AnimalType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/animals/enums/PackAnimals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/animals/enums/Pets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/exceptions/WrongClassException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/registry/AnimalRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/registry/BuildersCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presenter/Modificateable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presenter/Presenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/cui/ConsoleUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/iView.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
